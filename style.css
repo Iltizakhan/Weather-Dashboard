@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0F766E,#083344);
+  color: white;
+  padding: 20px;
+}
+
+.dashboard {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 600;
+  font-weight: bold;
+}
+
+.search-box {
+  display: flex;                      
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  margin-left: auto;
+  padding: 8px 12px;
+  background: #f8f6f6;
+  border-radius: 10px;
+}
+
+.search-box input {
+  padding: 18px 18px;
+  background: transparent;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  color: #111111;
+  width: 220px;
+}
+
+.search-box button {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: #fafaf4;
+}
+
+.profile {
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.card {
+  background: linear-gradient(135deg, #0F766E,#083344);
+  color: white;
+  border: 1px solid #22D3EE;
+  border-radius: 15px;
+  padding: 20px;
+  border-radius: 14px;
+}
+
+.top-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.big-card .temp {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.weather-main {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.small-card p {
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+.forecast-card {
+  margin-bottom: 25px;
+}
+
+canvas {
+  width: 100% !important;
+  height: 240px !important;
+}
+
+.weekly-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+}
+
+.weekly-item {
+background: linear-gradient(135deg, #0F766E,#083344);
+  color: white;
+  border: 1px solid #22D3EE;
+  text-align: center;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.weekly-item img {
+  width: 28px;
+  margin-bottom: 5px;
+}
+.humidity-card {
+  background: linear-gradient(135deg, #6bf8ec,#083344);
+  color: white;
+  border: 1px solid #22D3EE;
+  border-radius: 15px;
+}
+.pressure-card {
+  background: linear-gradient(135deg,#6bf8ec,#083344);
+  color: white;
+  border: 1px solid #22D3EE;
+  border-radius: 15px;
+}
+.wind-card {
+  background: linear-gradient(135deg, #6bf8ec,#083344);
+  color: white;
+  border: 1px solid #22D3EE;
+  border-radius: 15px;
+}
+.currentweather-card {
+  background: linear-gradient(135deg,#2c8880,#247899);
+  color:white;
+  border: 1px solid #22D3EE;
+  border-radius: 15px;
+}
+.forecast-card{
+  background: linear-gradient(135deg,#2c8880,#247899);
+  color: white;
+  border: 1px solid #22D3EE;
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0,20,40,0.25);
+}
+.forecast-card h2{
+  color: white;
+}
+.forecast-card canvas{
+  filter: drop-shadow(0 0 5px #24abb4);
+}
+.forecast-card{
+  transition: transfrom 0.3s ease, box-shadhow 0.3s ease;
+}
+.forecast-card:hover {
+  transition: translatey(-4px);
+  box-shadow: 0 12px 28px rgba(246, 248, 248, 0.2)
+}
+.logo span{
+  color: #22D3EE;
+}
